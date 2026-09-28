@@ -1,59 +1,124 @@
-<<<<<<< HEAD
 <!doctype html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Utmaning - Minskat matsvinn</title>
+    <title>Utmaning – Anonym digital frågelåda</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
-      <h1>
-        Kan ett digitalt förbokningssystem minska matsvinnet i
-        lunchrestauranger?
-      </h1>
-      <nav>
-        <a href="index.html">Hem</a>
-        <a href="amnesomrode.html">Ämnesområde</a>
-        <a href="utmaning.html" class="active">Utmaning</a>
-        <a href="ide.html">Idé</a>
-        <a href="hypotes.html">Hypotes</a>
+      <h1>Kan en anonym digital frågelåda öka studenters deltagande?</h1>
+
+      <nav aria-label="Huvudnavigation">
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="amnesomrode.html">Ämnesområde</a></li>
+          <li><a href="utmaning.html" aria-current="page">Utmaning</a></li>
+          <li><a href="ide.html">Idé</a></li>
+          <li><a href="hypotes.html">Hypotes</a></li>
+          <li><a href="referenslista.html">Referenslista</a></li>
+        </ul>
       </nav>
     </header>
-    <main></main>
+
+    <main class="utmaning-page">
+      <section id="problemet-idag">
+        <h2>Beskrivning av problemet idag</h2>
+
+        <article class="problem-box">
+          <h3>Passivitet i föreläsningssalen</h3>
+          <p>
+            <a href="referenslista.html#mayer-2009">Mayer et al. (2009)</a>
+            beskriver ett scenario som är typiskt för storföreläsningar vid
+            universitet: en föreläsningssal med 120 studenter, där föreläsaren
+            ibland pausar och frågar om det finns frågor, men bara en eller två
+            studenter räcker upp handen. Resten av interaktionen blir kortvarig,
+            och många studenter ägnar sig istället åt annat tills föreläsaren
+            fortsätter.
+          </p>
+        </article>
+
+        <article class="problem-box">
+          <h3>Normen i högre utbildning</h3>
+          <p>
+            Det här är inte ett undantag utan snarare normen: idag hålls många
+            universitetskurser i stora föreläsningssalar med hundratals
+            studenter, vilket gör att studenter riskerar att uppleva sig själva
+            som passiva mottagare av undervisningen snarare än aktiva deltagare.
+          </p>
+        </article>
+
+        <figure class="rapport-bild">
+          <img
+            src="andel_som_racker_upp_handen_v3.png"
+            alt="120 studenter i föreläsningssalen där enstaka studenter räcker upp handen"
+          />
+          <figcaption>
+            <span>Figur 1:</span> Endast 1 till 2 av 120 studenter ställer sin
+            fråga öppet i salen.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="gruppstorlek" class="problem-box">
+        <h2>Varför just storleken på gruppen är problemet</h2>
+
+        <article>
+          <h3>Osynliga frågor</h3>
+          <p>
+            Det centrala problemet är inte att studenter saknar frågor, utan att
+            den fysiska och sociala miljön i en stor föreläsningssal gör det
+            svårt att faktiskt ställa dem. När endast en eller två av 120
+            studenter räcker upp handen, betyder det att en mycket liten och
+            orepresentativ andel av klassens frågor och missuppfattningar
+            någonsin når föreläsaren.
+          </p>
+        </article>
+
+        <article>
+          <h3>Social exponering och rädsla</h3>
+          <p>
+            Rädslan för att verka okunnig kan förstärkas av offentlig exponering
+            och social jämförelse
+            <a href="referenslista.html#alvarez-ayala-2026"
+              >(Álvarez Ayala et al., 2026)</a
+            >. En stor föreläsning är en sådan miljö nästan per definition. Att
+            räcka upp handen inför hundratals medstudenter innebär att synligt
+            exponera sin eventuella osäkerhet inför hela gruppen.
+          </p>
+        </article>
+      </section>
+
+      <section id="konsekvenser" class="konsekvens-box">
+        <h2>Konsekvensen: Passivt engagemang och uteblivet lärande</h2>
+
+        <article>
+          <h3>Minskat lärande</h3>
+          <p>
+            Om studenter inte känner sig delaktiga i undervisningssituationen är
+            de mindre benägna att aktivt bearbeta materialet, vilket kan påverka
+            resultaten på kunskapstester
+            <a href="referenslista.html#mayer-2009">(Mayer et al., 2009)</a>.
+          </p>
+        </article>
+
+        <article>
+          <h3>Behovet av låg friktion</h3>
+          <p>
+            Manuella lösningar, som pappersformulär, kan ta tid och störa
+            föreläsningens flyt enligt
+            <a href="referenslista.html#mayer-2009">Mayer et al. (2009)</a>.
+            Därför behöver frågeverktyget vara enkelt och passa in i
+            föreläsningen.
+          </p>
+        </article>
+      </section>
+    </main>
+
     <footer>
-      <p>GIK2UK - Webbprojekt</p>
+      <p>GIK2UK – Webbprojekt</p>
     </footer>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-   <html lang="sv">
-    <head>
-         <meta charset="UTF-8">
-          <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-     <title>Ämnensområdet - Minskat matsvinn</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-     <body> 
- <header>
-     <h1>Kan ett digitalt förbokningssystem minska matsvinnet i lunchrestauranger?</h1>
-      <nav>
-         <a href="index.html">Hem</a>
-          <a href="amnesomrode.html">Ämnesområde</a>
-           <a href="utmaning.html">Utmaning</a>
-            <a href="ide.html">Idé</a>
-             <a href="hypotes.html">Hypotes</a>
-      </nav>
- </header>
-  <main>
-
-  </main>
-   <footer>
-       <P>GIK2UK - Webbprojekt om minskat matsvinnet</P>
-   </footer>
-     </body>
-      </html>
->>>>>>> 4c76614dafd4d66c34cc89b5e321ebea10ea262b

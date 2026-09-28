@@ -1,77 +1,185 @@
 body {
-<<<<<<< HEAD
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #222222;
-  line-height: 1.6;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-header {
-  background-color: #102a43;
-  color: #ffffff;
-  padding: 30px;
-}
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-right: 20px;
-  font-weight: bold;
+  margin: 0;
+  background: #f3f4f6;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-nav a:hover {
-  color: #f4c542;
-  text-decoration: underline;
-}
-nav a.active {
-  color: #f4c542;
-  border-bottom: 2px solid #f4c542;
-}
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px 20px;
-
-  flex: 1;
-  width: 100%;
-  box-sizing: border-box;
-}
+header,
 footer {
-  background-color: #102a43;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-=======
-    margin: 0;
-    font-family: Arial,
-    sans-serif;
-    background-color:#f5f5f5;
-    color: #222222;
-    line-height: 1.6;
-}
-header {
-    background-color:#102a43;
-    color:#ffffff;
-    padding:30px;
-}
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 20px;
-    font-weight: bold;
+  background: #15365d;
+  color: white;
 }
 
-nav a:hover {
-    color: #f4c542;
-    text-decoration: underline;
+header {
+  padding: 30px 40px;
 }
+
+header h1,
+nav,
 main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 30px 20px;
->>>>>>> 4c76614dafd4d66c34cc89b5e321ebea10ea262b
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: #cfd7e2;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: white;
+}
+
+nav a[aria-current="page"] {
+  border-bottom: 2px solid white;
+}
+
+main {
+  flex: 1;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 35px;
+  background: white;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2,
+h3 {
+  color: #15365d;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.sammanfattning,
+.problem-box,
+.konsekvens-box {
+  padding: 25px;
+  border-left: 6px solid #15365d;
+  background: #f0f4f8;
+}
+
+.sammanfattning ol,
+.references-page ol {
+  padding-left: 25px;
+}
+
+.sammanfattning li {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.sammanfattning li:last-child {
+  margin-bottom: 0;
+}
+
+.konsekvens-box {
+  border-left-color: #d9534f;
+  background: #fdf3f2;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+article:last-child {
+  margin-bottom: 0;
+}
+
+.rapport-bild {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.rapport-bild img {
+  width: auto;
+  max-width: 100%;
+  max-height: 60vh;
+  height: auto;
+}
+
+.rapport-bild figcaption {
+  margin-top: 8px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.references-page li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.references-page .problem-box {
+  border-left-color: #d6a600;
+  background: #fff8d9;
+}
+
+footer {
+  padding: 18px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    width: calc(100% - 24px);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 20px;
+  }
+
+  .sammanfattning,
+  .problem-box,
+  .konsekvens-box {
+    padding: 18px;
+  }
 }
